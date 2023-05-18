@@ -1,0 +1,265 @@
+html {
+    background-color: #E5E5E5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 35px;
+    text-align: center;
+    color: #B6B6B6;
+    font-family: 'Pacifico', cursive;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 915px;
+    min-height: 623px;
+    padding: 66px 80px 60px 80px;
+    margin: 50px auto 0 auto;
+    background-color: white;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.wrapper {
+    display: flex;
+    padding-right: 38px;
+    padding-top: 12px;
+    min-height: 35px;
+}
+
+.item {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.done {
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+
+.done label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 15px;
+    margin-top: 10px;
+}
+  
+.done label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 4px;
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 3px;
+    transform: rotate(-45deg);
+    width: 7px;
+}
+
+.done input[type="checkbox"] {
+    visibility: hidden;
+}
+
+
+.done input[type="checkbox"]:checked + label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+}
+  
+.done input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    box-sizing: border-box;
+    width: 655px;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    word-break: break-word;
+}
+
+.edit {
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.delete {
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+}
+
+.date {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding-right: 38px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #DEDEDE;
+}
+
+textarea {
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #B6B6B6;
+    border: 2px solid #DBDBDB;
+}
+
+.textarea1 {
+    width: 754px;
+    height: 75px;
+    margin-top: 15px;
+    padding: 13px 23px;
+    line-height: 19px;   
+}
+
+.textarea2 {
+    width: 623px;
+    padding: 9px 23px 0px 30px;
+    margin-right: 13px;
+}
+
+textarea:focus {
+    outline-color: #40C245;
+}
+
+button {
+    width: 130px;
+    height: 45px;
+    margin-top: 21px;
+    background: #F44336;
+    opacity: 0.8;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.wrapper img:hover, button:hover {
+    cursor: pointer;
+}
+
+.doneList {
+    margin-top: 45px;
+}
+
+.inactive {
+    display: none;
+}
+
+.save {
+    padding-top: 13px;
+}
+
+.save span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #1C5AD2;
+}
+
+.save span:hover {
+    cursor: pointer;
+}
+
+.modal {
+    box-sizing: border-box;
+    position: absolute;
+    width: 397px;
+    min-height: 141px;
+    background-color: #42414D;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 30px 35px 65px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.file {
+    color: white;
+}
+
+.task {
+    margin-top: 20px;
+    width: 327px;
+    height: auto;
+    word-break: break-word;
+    color: white;
+}
+
+.task img {
+    width: 16px;
+    height: 16px;
+}
+
+.ok {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(38, 221, 253);
+    border-radius: 5px;
+    padding: 10px 17px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background:rgb(255, 255, 255, 0.5);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>TodoList</title>
+</head>
+<body>
+    <div class="container">
+        <p>Todo List is Empty</p>
+        <div class="title">TO DO</div>
+        <div>
+            <ul class="list1"></ul>
+        </div>
+        <textarea name="" id="" cols="30" rows="2" class="textarea1" placeholder="example: buy bread"></textarea>        
+        <button type ="button" disabled>Add</button>
+        <div class="doneList">
+            <div class="title">DONE</div>
+            <ul class="list2"></ul>
+        </div>
+    </div>
+    
+    <div class="overlay inactive">
+        <div class="modal inactive">
+            <div class="file"></div>
+            <div class="task"></div>
+            <div class="ok">OK</div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
